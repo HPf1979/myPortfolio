@@ -1,4 +1,4 @@
-<div id="headerID" class="header hide-mobile">
+<nav id="headerID" class="header hide-mobile">
   <p style="font-size: 40px">
     <b>Herlin<span class="light-blue">a</span></b>
   </p>
@@ -8,11 +8,11 @@
     <a (click)="scroll('skillsID')">Skills</a>
     <a (click)="scroll('portfolioID')">Portfolio</a>
   </div>
-</div>
+</nav>
 
 <!-- Responsive Header-->
-<div class="placeholder show-mobile"></div>
-<div class="header-responsive show-mobile">
+<nav class="placeholder show-mobile"></nav>
+<nav class="header-responsive show-mobile">
   <div>
     <p>
       <b>Herlin<span class="light-blue">a</span></b>
@@ -22,7 +22,7 @@
     <img (click)="showMenu()" *ngIf="!menuShow" src="assets/img/menu.png" />
     <img (click)="hideMenu()" *ngIf="menuShow" src="assets/img/x_white.png" />
   </div>
-</div>
+</nav>
 
 <div id="menuResponsive" class="menu-responsive show-mobile hide">
   <a (click)="scroll('aboutID')">About me</a>

@@ -106,10 +106,29 @@
 
  .contact-shadow {
      position: absolute;
-     height: 53%;
+     width: 30%;
      left: -10px;
-     top: 4528px;
+     top: 4480px;
  }
+
+@media (max-width:1350px) {
+
+    .contact-shadow {
+        left: 0px;
+        top: 4580px;
+    }
+
+}
+
+@media (max-width:1050px) {
+
+    .contact-shadow {
+        left: 0px;
+        top: 4680px;
+    }
+
+}
+
 @media (max-width:750px) {
 .contact-container {
     height: 800px;
@@ -132,9 +151,31 @@
 }
 
 .contact-shadow {
-    top:5700px;
+   
+    top:5950px;
 }
 
+}
+
+@media (max-width:660px) {
+.contact-shadow {
+
+        top: 6000px;
+    }
+}
+
+@media (max-width:550px) {
+    .contact-shadow {
+
+        top: 6050px;
+    }
+}
+
+@media (max-width:540px) {
+    .contact-shadow {
+
+        top: 6100px;
+    }
 }
 
 @media (max-width:530px) {
@@ -142,7 +183,7 @@
     height: 900px;
     }
     .contact-shadow {
-    top: 6100px;
+    top: 6423px;
     }
         
 }
@@ -155,14 +196,14 @@
         }
     }
          .contact-shadow {
-             top: 6200px;
+             top: 6500px;
          }
 }
 
 
 @media (max-width:450px) { 
 .contact-shadow {
-        top: 6272px;
+        top: 6600px;
     }
 
 .button {

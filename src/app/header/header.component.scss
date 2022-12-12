@@ -62,8 +62,6 @@
     
 }
 
-
-
    .menu-responsive {
         position: fixed;
         top: 100px;
@@ -146,11 +144,11 @@
 
 }
 
-@media (max-width:420px) {
+@media (max-width:414px) {
 
     .menu-responsive,
     .header-responsive {
-        width: 420px !important;
+        width: 414px !important;
     }
     
 }
