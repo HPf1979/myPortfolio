@@ -1,0 +1,68 @@
+ .line {
+     background: #00BEE8;
+     height: 4px;
+     width: 100%;
+ }
+
+.footer {
+    background-color: #141D2F;
+    backdrop-filter: blur(32.5px);
+    display: flex;
+    height: 200px;
+    color: white;
+    justify-content: space-around;
+
+    .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+        
+        .light-blue {
+                color: #00BEE8;
+            }
+    }
+    .impressum:hover {
+    cursor: pointer;
+    color: #00BEE8;
+    }       
+    }
+
+    
+
+    .footer-middle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    }
+    
+    .footer-right {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width:530px) {
+   .footer {
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+   }
+}
+
+
+
+  
+

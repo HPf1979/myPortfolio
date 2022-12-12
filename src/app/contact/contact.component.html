@@ -1,0 +1,57 @@
+<div id="contactID" class="contact-container">
+  <div class="contact-title">
+    <div class="line-left"></div>
+    <div><h1>Contact</h1></div>
+  </div>
+
+  <div class="contact-content">
+    <div class="contact-left">
+      <h3>Got a problem to solve?</h3>
+      <span>
+        Contact me through this form or by e-mailing me under
+        <span style="color: #00bee8">pfeiffer.herlina@gmx.net</span>. <br />
+        I am interested in hearnng you, knowing your ideas and contributing to
+        your projects with my work <br /><br />
+        Need a Fronted Developer? <b>Contact me!</b>
+      </span>
+    </div>
+
+    <form (submit)="sendMail()" ngNativeValidate class="contact-right" #myForm>
+      <div>
+        <input
+          required
+          type="text"
+          name="name"
+          #nameField
+          placeholder="Your name"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <input
+          required
+          type="text"
+          name="email"
+          #emailField
+          placeholder="Your email"
+          autocomplete="off"
+        />
+        <div>
+          <textarea
+            required
+            name="message"
+            #messageField
+            rows="4"
+            cols="7"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+
+        <div class="button">
+          <button type="submit" #sendButton>Send message :)</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<img class="contact-shadow" src="assets/img/contact-shadow.png" />

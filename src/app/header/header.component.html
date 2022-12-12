@@ -1,0 +1,32 @@
+<div id="headerID" class="header hide-mobile">
+  <p style="font-size: 40px">
+    <b>Herlin<span class="light-blue">a</span></b>
+  </p>
+  <div class="menu">
+    <!--  <a href="#aboutID" (click)="scroll('aboutID')">About me</a> -->
+    <a (click)="scroll('aboutID')">About me</a>
+    <a (click)="scroll('skillsID')">Skills</a>
+    <a (click)="scroll('portfolioID')">Portfolio</a>
+  </div>
+</div>
+
+<!-- Responsive Header-->
+<div class="placeholder show-mobile"></div>
+<div class="header-responsive show-mobile">
+  <div>
+    <p>
+      <b>Herlin<span class="light-blue">a</span></b>
+    </p>
+  </div>
+  <div class="mobile-menu">
+    <img (click)="showMenu()" *ngIf="!menuShow" src="assets/img/menu.png" />
+    <img (click)="hideMenu()" *ngIf="menuShow" src="assets/img/x_white.png" />
+  </div>
+</div>
+
+<div id="menuResponsive" class="menu-responsive show-mobile hide">
+  <a (click)="scroll('aboutID')">About me</a>
+  <a (click)="scroll('skillsID')">Skills</a>
+  <a (click)="scroll('portfolioID')">Portfolio</a>
+  <a (click)="scroll('contactID')">Contact</a>
+</div>

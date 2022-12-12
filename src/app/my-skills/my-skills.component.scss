@@ -1,0 +1,194 @@
+.skill-container {
+    height: 915px;
+    background: #141D2F;
+    backdrop-filter: blur(32.5px);
+    display: flex;
+    color: white;  
+
+    .skill-left {
+            width: 60%;
+            padding:50px;
+            padding-right:80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .shadowskill {
+                position:absolute;
+                left: -225px;
+                z-index:10;
+             
+              
+            }
+
+        .skill-logo{
+            display: flex;
+            gap: 80px;
+            flex-wrap: wrap;
+            padding-left: 10px;
+
+            .img-description {
+            display: flex;
+            flex-direction: column;
+            width:80px;  
+            font-size:15px;
+            text-align: center;
+            align-items: center;
+            z-index: 999;
+                img {
+                width: 50px;
+        
+                }
+            }
+            
+        }   
+    }
+        
+
+    .skill-right {
+        width: 40%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        .skill {
+        display: flex;
+        font-family: "Poppins";
+        align-items: center;
+        color: white;
+        text-align: end;
+        width:100%;
+
+            .skill-title{
+            width: 424px;
+          
+                h1{              
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 120%;
+                }
+            }
+            .line3 {
+            background: #4B47FF;
+            height: 4px;
+            width: 50%;
+            margin-left:20px;
+            }
+        }   
+
+      .skill-text {
+        margin-right: 155px;
+        width: 100%;
+        text-align: end;
+      }
+
+      .button {
+        width: 424px;
+        text-align: center;
+      
+            button {
+                width: 165px;
+                border-radius: 10px;
+                height: 39px;
+                color: white;
+                background: #00BEE8;
+                margin-top: 26px;
+                margin-left: 63px;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                border-color: #00BEE8;
+                cursor: pointer;
+                
+                    &:hover {
+                        filter: brightness(1.2);
+                    }
+                }  
+        }
+        
+    }  
+}
+
+@media (max-width:920px) { 
+    .skill-left {
+        padding-right:30px !important;
+    }
+
+    .skill-text {
+       margin-right:100px !important;
+    }
+}
+
+@media (max-width:750px) {
+    .skill-container {
+        flex-direction: column-reverse;
+    }
+
+    .skill-left {
+        width:100%!important;
+    }
+
+    .skill-right {
+       text-align: end;
+       align-items: end !important;;
+       width: 100% !important;
+
+       .skill, .skill-text {
+        width:50%!important;
+       }
+    }
+
+}
+
+@media (max-width:660px) {
+    .skill-left {
+        padding-left: 15px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .skill-left {
+        padding-left: 5px !important;
+    }
+}
+
+@media (max-width:586px) {
+    .skill-left {
+    padding: 50px !important;
+    }
+}
+
+@media (max-width:530px) {
+    .skill-container{
+        padding-top:250px;
+    }
+}
+@media (max-width:500px) {
+    .skill-container {
+            padding-top: 394px;
+        }
+    .skill-logo {
+       padding-left:0px !important;
+    width: 70%;
+    }
+}
+
+@media (max-width:450px) {
+    .skill-container {
+        padding-top: 500px;
+    }
+}
+
+@media (max-width:400px) {
+    .skill-left {
+    margin-left: -27px;
+    }
+}
+
+
+@media (max-width:375px) {
+.skill-container {
+    padding-top: 563px;
+}
+}
+
